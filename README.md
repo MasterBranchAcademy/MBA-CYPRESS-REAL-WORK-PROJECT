@@ -30,12 +30,15 @@
 
 ### Dosya yapısı ###
 
-|- cypress
+|- MBA-CYPRESS-REAL-WORK-PROJECT
+    |- cypress
+    
         |- e2e ## gerçek test dosyalarını tutar
         |- fixture ## isteğe bağlı json dosyalarını tutar
         |- Page ## web sayfasında belirtilen yöntemleri tutar
-        |- screenshots ## başarısız testlerin ekran görüntülerini tutar
-        |- support ## kancaları ve özel komutları tutar
-        |- videos ## başarısız testler için videolar tutar
-        |- .gitignore ## işlenecek dosyaları yoksay
-        |- cypress.config.js ## cypress yapılandırma dosyası
+
+|- screenshots ## başarısız testlerin ekran görüntülerini tutar
+|- support ## kancaları ve özel komutları tutar
+|- videos ## başarısız testler için videolar tutar
+|- .gitignore ## işlenecek dosyaları yoksay
+|- cypress.config.js ## cypress yapılandırma dosyası
