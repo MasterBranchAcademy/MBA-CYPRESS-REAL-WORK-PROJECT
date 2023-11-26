@@ -16,7 +16,7 @@
 * npm install
 * npm install cypress@13.0.0 --save-dev
 
-### Selvi kontrol paneli nasıl açılır? ###
+### Cypress kontrol paneli nasıl açılır? ###
 
 * npx cypress open
 
