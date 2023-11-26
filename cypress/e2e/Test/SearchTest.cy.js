@@ -14,7 +14,7 @@ describe("Search Tests", () => {
 })
 
 it("Kullanici Greenkart sayfasina basariyla urun aramasi yapabilmeli", () => {
-    //const item = "Brocolli"
+    //const item = "Cake"
     const item = user.search.searchItem;
     searchPage.searchItem(item)
     cy.getByCompoundSel(LOCATORS.SEARCH_PAGE.PRODUCTS, LOCATORS.SEARCH_PAGE.PRODUCTS_NAME)
