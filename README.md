@@ -26,7 +26,7 @@
 
 ### Belirli bir test nasıl yapılır? ###
 
-* npx cypress run --spec ./cypress/e2e/HomePage.cy.js
+* npx cypress run --spec ./cypress/e2e/Test/HomePage.cy.js
 
 ### Dosya yapısı ###
 
