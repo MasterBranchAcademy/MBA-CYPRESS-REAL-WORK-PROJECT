@@ -23,4 +23,4 @@ jobs:
       with:
         record: true # Test kayıtlarını etkinleştir
         config: video=true,screenshotOnRunFailure=true # Video ve başarısızlık durumunda ekran görüntüsü alma ayarları
-      run: npx cypress run # Cypress testlerini doğrudan çalıştır
+        run: npx cypress run # Cypress testlerini doğrudan çalıştır
