@@ -1,0 +1,26 @@
+name: Cypress Tests
+
+on: [push]
+
+jobs:
+  run-cypress:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Projenizde kullandığınız Node.js sürümünü belirtin
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Cypress Tests
+      uses: cypress-io/github-action@v2
+      with:
+        record: true # Test kayıtlarını etkinleştir
+        config: video=true,screenshotOnRunFailure=true # Video ve başarısızlık durumunda ekran görüntüsü alma ayarları
+      run: npx cypress run # Cypress testlerini doğrudan çalıştır
