@@ -1,25 +1,65 @@
-name: Cypress Tests
+name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '*'
 
 jobs:
-  run-cypress:
+  test:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node_version: [12.9.1]
+
+    env:
+      KUBERNETES_MEMORY_REQUEST: 1Gi
+      KUBERNETES_MEMORY_LIMIT: 2Gi
+
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14' # Projenizde kullandığınız Node.js sürümünü belirtin
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node_version }}
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run Cypress Tests
-      uses: cypress-io/github-action@v2
-      with:
-        record: true # Test kayıtlarını etkinleştir
-        config: video=true,screenshotOnRunFailure=true # Video ve başarısızlık durumunda ekran görüntüsü alma ayarları
+      - name: Install Chrome
+        run: |
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb
+          sudo apt-get install -f
+
+      - name: Install Xvfb and other packages
+        run: |
+          export DEBIAN_FRONTEND=noninteractive  # Set noninteractive frontend
+          sudo apt-get update
+          sudo apt-get install -y xvfb libdrm-amdgpu1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libfontenc1 libgl1 libgl1-amber-dri libgl1-mesa-dri libglapi-mesa libglvnd0 libglx-mesa0 libglx0 libice6 libllvm15 libpciaccess0 libsm6 libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-sync1 libxcb-xfixes0 libxfont2 libxkbfile1 libxmu6 libxmuu1 libxpm4 libxshmfence1 libxt6 libxxf86vm1 x11-common x11-xkb-utils xauth xfonts-base xfonts-encodings xfonts-utils xserver-common xvfb
+
+      - name: Start Xvfb
+        run: |
+          export DISPLAY=:99
+          Xvfb -screen 0 1920x1080x24 $DISPLAY -ac &
+
+      - name: Check Chrome Version
+        run: google-chrome-stable --version
+
+      - name: Run Cypress tests
+        run: |
+          npx cypress run --browser chrome --headless
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-artifacts
+          path: |
+            cypress/videos/*/.mp4
+            cypress/screenshots/*/.png
+
+    timeout-minutes: 210
