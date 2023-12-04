@@ -14,7 +14,7 @@ module.exports = defineConfig({
   videoCompression: true,
   screenshot: true,
   e2e: {
-        baseUrl: 'https://rahulshettyacademy.com/seleniumPractise/#/',
+        baseUrl: 'https://automationexercise.com/',
     },
     setupNodeEvents(on) {
       on('before:browser:launch', (browser = {}, launchOptions) => {

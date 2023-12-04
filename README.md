@@ -2,7 +2,7 @@
 
 * Bu proje,Master Branch Academy tarafindan "Cypress Pratigi"  yapmak amaciyla olusturulmustur
 
-       -> https://rahulshettyacademy.com/seleniumPractise/#/
+       -> https://automationexercise.com/
 
 * Yalnızca web sitesinin kullanıcı arayüzünü kapsar
 
