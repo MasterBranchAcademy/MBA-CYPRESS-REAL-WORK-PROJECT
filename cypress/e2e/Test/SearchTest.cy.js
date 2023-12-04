@@ -1,18 +1,17 @@
-import HomePage from "../Page/SearchPage"
-import LOCATORS from "../../support/locators";
+import HomePage from "../Page/HomePage"
 
-describe("Search Tests", () => {
+describe("Homepage Tests", () => {
     const testPage = new HomePage()
     let user;
-    beforeEach(() => {
+    before(() => {
         cy.fixture('userDatas/info').then((userInfo) => {
             user = userInfo
         })
     })
 
     it("Kullanici test sayfasina basariyla erisebilmeli", () => {
-   testPage.visitPage()
-   cy.contains(user.home.homePageText).should("be.visible")
+        testPage.visitPage()
+        cy.contains(user.home.homePageText).should("be.visible")
     })
 
 })
