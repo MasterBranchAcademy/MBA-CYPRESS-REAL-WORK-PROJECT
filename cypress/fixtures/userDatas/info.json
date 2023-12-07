@@ -1,6 +1,16 @@
 {
   "home": {
-    "homePageText": "Full-Fledged practice website for Automation Engineers"
+    "homePageText": "Full-Fledged practice website for Automation Engineers",
+    "title": "Automation Exercise"
+  },
+
+  "loginPage":{
+    "newUserText": "New User Signup!",
+    "loginToAccountText": "Login to your account"
+  },
+
+  "signUpPage":{
+    "enterAccountText": "Enter Account Information"
   },
 
   "userInfo": {
