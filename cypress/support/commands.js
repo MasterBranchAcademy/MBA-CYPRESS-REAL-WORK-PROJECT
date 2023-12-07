@@ -14,8 +14,8 @@ Cypress.Commands.add("getByDataQa", (selector) => {
 });
 
 Cypress.Commands.add("deleteAccount", () => {
-  cy.getBySel(LOCATORS.DELETE_PAGE.DELETE_ACCOUNT_BTN).click();
-  cy.getByDataQa(LOCATORS.DELETE_PAGE.ACCOUNT_DELETED_TEXT).should("be.visible");
-  cy.getByDataQa(LOCATORS.DELETE_PAGE.CONTINUE_BTN).click();
+  cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.DELETE_PAGE.DELETE_ACCOUNT_BTN).click()
+  cy.getByDataQa(LOCATORS.DELETE_PAGE.ACCOUNT_DELETED_TEXT).should("be.visible")
+  cy.getByDataQa(LOCATORS.DELETE_PAGE.CONTINUE_BTN).click()
 
 });

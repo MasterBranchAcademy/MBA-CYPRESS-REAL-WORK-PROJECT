@@ -1,11 +1,11 @@
 const LOCATORS = {
     EXAMPLE_PAGE: {
         EXAMPLE: ".example"
-
     },
     
     HOME_PAGE: {
-        LOGIN_BTN: 'a[href="/login"]'
+        LOGIN_BTN: 'a[href="/login"]',
+        HEADER: "#header"
     },
 
     LOGIN_PAGE: {
@@ -46,10 +46,10 @@ const LOCATORS = {
         ACCOUNT_CREATED: "account-created",
         CONTINUE_BTN:"continue-button",
 
-        LOGGED_AS_TEXT:"#header li:nth-child(10) > a"
+        LOGGED_AS_TEXT:"li:nth-child(10) > a"
     },
     DELETE_PAGE:{
-        DELETE_ACCOUNT_BTN: "#header li:nth-child(5) > a",
+        DELETE_ACCOUNT_BTN: "li:nth-child(5) > a",
         ACCOUNT_DELETED_TEXT: "account-deleted",
         CONTINUE_BTN :"continue-button"
     }
