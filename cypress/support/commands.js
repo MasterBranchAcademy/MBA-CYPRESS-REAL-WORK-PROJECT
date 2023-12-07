@@ -1,3 +1,5 @@
+import LOCATORS from "./locators";
+
 Cypress.Commands.add(`getBySel`, (selector) => {
   return cy.get(`${selector}`);
 });
@@ -15,4 +17,5 @@ Cypress.Commands.add("deleteAccount", () => {
   cy.getBySel(LOCATORS.DELETE_PAGE.DELETE_ACCOUNT_BTN).click();
   cy.getByDataQa(LOCATORS.DELETE_PAGE.ACCOUNT_DELETED_TEXT).should("be.visible");
   cy.getByDataQa(LOCATORS.DELETE_PAGE.CONTINUE_BTN).click();
+
 });
