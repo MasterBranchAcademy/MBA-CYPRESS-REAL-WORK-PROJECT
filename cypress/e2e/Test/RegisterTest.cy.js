@@ -2,9 +2,7 @@ import LOCATORS from "../../support/locators";
 import HomePage from "../Page/HomePage";
 import LoginPage from "../Page/LoginPage";
 import SignupPage from "../Page/SignupPage";
-
 describe('Register Test', () => {
-
     const homePage = new HomePage
     const loginPage = new LoginPage
     const signupPage = new SignupPage
@@ -14,11 +12,10 @@ describe('Register Test', () => {
         cy.fixture('userDatas/info').then((userInfo) => {
             user = userInfo
         })
+    })
     after(() => {
         cy.deleteAccount();
-    });
-
-
+     });
     it('Kullanici Hesap Olusturabilmeli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)        
@@ -31,7 +28,6 @@ describe('Register Test', () => {
         cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CONTINUE_BTN).click()        
         cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.SIGNUP_PAGE.LOGGED_AS_TEXT).should('be.visible')
     });
-
     it.only('Kullanici login yapabilmelli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)        
