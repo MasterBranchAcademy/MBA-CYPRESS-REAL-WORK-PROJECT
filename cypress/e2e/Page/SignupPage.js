@@ -22,7 +22,4 @@ class SignupPage {
     cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CREATE_ACCOUNT_BTN).click();
   }
 }
-    
-    
-  
 export default SignupPage;

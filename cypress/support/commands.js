@@ -17,4 +17,6 @@ Cypress.Commands.add("deleteAccount", () => {
   cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.DELETE_PAGE.DELETE_ACCOUNT_BTN).click()
   cy.getByDataQa(LOCATORS.DELETE_PAGE.ACCOUNT_DELETED_TEXT).should("be.visible")
   cy.getByDataQa(LOCATORS.DELETE_PAGE.CONTINUE_BTN).click()
+
 });
+

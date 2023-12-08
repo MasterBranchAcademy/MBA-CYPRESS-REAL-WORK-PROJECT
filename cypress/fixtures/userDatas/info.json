@@ -14,8 +14,8 @@
   },
 
   "userInfo": {
-    "userName": "Johne",
-    "email": "johne_wick@mail.com",
+    "userName": "John",
+    "email": "john_wick@mail.com",
     "password": "1234567",
     "dayOfBirth": "1",
     "monthOfBirth": "January",
@@ -30,6 +30,7 @@
     "city": "Toronto",
     "zipcode": "456879",
     "mobilNumber": "+145647898456"
+
   },
 
   "userLoginPage":{
