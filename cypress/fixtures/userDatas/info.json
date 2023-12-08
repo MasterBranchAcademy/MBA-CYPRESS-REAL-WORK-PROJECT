@@ -1,5 +1,40 @@
 {
   "home": {
-    "homePageText": "Full-Fledged practice website for Automation Engineers"
+    "homePageText": "Full-Fledged practice website for Automation Engineers",
+    "title": "Automation Exercise"
+  },
+
+  "loginPage":{
+    "newUserText": "New User Signup!",
+    "loginToAccountText": "Login to your account"
+  },
+
+  "signUpPage":{
+    "enterAccountText": "Enter Account Information"
+  },
+
+  "userInfo": {
+    "userName": "Johne",
+    "email": "johne_wick@mail.com",
+    "password": "1234567",
+    "dayOfBirth": "1",
+    "monthOfBirth": "January",
+    "yearOfBirth": "1980",
+    "firstName": "John",
+    "lastName": "Wick",
+    "company": "MBA",
+    "address1": "Sherlock",
+    "address2": "holm street",
+    "country": "Canada",
+    "state": "Ontario",
+    "city": "Toronto",
+    "zipcode": "456879",
+    "mobilNumber": "+145647898456"
+  },
+
+  "userLoginPage":{
+    "loginToAccountText": "Login to your account",
+    "emailAddress": "johne_wick@mail.com",
+    "password": "1234567"
   }
 }
