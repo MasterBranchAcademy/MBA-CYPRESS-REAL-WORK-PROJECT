@@ -14,8 +14,8 @@
   },
 
   "userInfo": {
-    "userName": "John",
-    "email": "john_wick@mail.com",
+    "userName": "Jon",
+    "email": "jon_wi@mail.com",
     "password": "1234567",
     "dayOfBirth": "1",
     "monthOfBirth": "January",
