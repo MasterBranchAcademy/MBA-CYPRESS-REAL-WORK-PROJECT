@@ -40,4 +40,4 @@ describe('Register Test', () => {
         loginPage.userLogin(user)            
         cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.SIGNUP_PAGE.LOGGED_AS_TEXT).should('be.visible')
     });
-};
+});
