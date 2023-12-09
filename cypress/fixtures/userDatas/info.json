@@ -30,5 +30,10 @@
     "city": "Toronto",
     "zipcode": "456879",
     "mobilNumber": "+145647898456"
+  },
+  "userLoginPage":{
+    "loginAccountText": "Login to your account",
+    "emailAddress": "kamil@mail.com",
+    "password": "1234567"
   }
 }
