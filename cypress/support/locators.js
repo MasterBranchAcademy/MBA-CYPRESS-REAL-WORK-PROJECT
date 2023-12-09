@@ -25,8 +25,9 @@ const LOCATORS = {
     LOGIN_EMAIL: "login-email",
     LOGIN_PASSWORD: "login-password",
     LOGIN_BTN: "login-button",
-
+    LOGIN_ACCOUNT_TEXT: ".login-form > h2",
     NEW_USER_TEXT: ".signup-form > h2",
+    LOGGED_AS_TEXT: "li:nth-child(10) > a",
   },
 
   SIGNUP_PAGE: {
