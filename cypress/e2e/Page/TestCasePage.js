@@ -7,7 +7,7 @@ class TestCase {
      }
    
     getTextTitle(){
-        cy.get(LOCATORS.TestCase_Text.TextTitle).should("be.visible")
+        return cy.get(LOCATORS.TestCase_Text.TextTitle)
     }
 }
 export default TestCase

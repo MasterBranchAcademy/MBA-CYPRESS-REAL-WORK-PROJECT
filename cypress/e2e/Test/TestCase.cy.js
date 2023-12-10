@@ -8,7 +8,7 @@ describe("TestCase Tests", () => {
 it("Kullanici test case sayfasina basariyla erisebilmeli", () => {
     testPage.visitPage()
     testCasePage.clickTestCase()
-    testCasePage.getTextTitle()
+    testCasePage.getTextTitle().should("be.visible")
 })
 
 })
