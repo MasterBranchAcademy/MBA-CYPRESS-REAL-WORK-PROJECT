@@ -1,14 +1,14 @@
 import LOCATORS from "../../support/locators"
 import HomePage from "../Page/HomePage"
-import TaseCase from "../Page/TaseCasePage"
-describe("TaseCase Tests", () => {
+import TestCase from "../Page/TestCasePage"
+describe("TestCase Tests", () => {
      const testPage = new HomePage()
-     const taseCasePage=new TaseCase()
+     const testCasePage=new TestCase()
 
 it("Kullanici test case sayfasina basariyla erisebilmeli", () => {
     testPage.visitPage()
-    taseCasePage.clickTaseCase()
-    taseCasePage.getTextTitle()
+    testCasePage.clickTestCase()
+    testCasePage.getTextTitle()
 })
 
 })

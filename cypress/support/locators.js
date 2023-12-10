@@ -4,11 +4,10 @@ const LOCATORS = {
   },
 
 
-  TaseCase_PAGE: {
-    TaseCase: ".col-sm-8 > .shop-menu > .nav > li:nth-child(5) > a"
-
+  TestCase_PAGE: {
+   TestCase:'.nav > li > a[href="/test_cases"]'
   },
-  TaseCase_Text: {
+  TestCase_Text: {
     TextTitle: ".text-center>b"
   },
 
