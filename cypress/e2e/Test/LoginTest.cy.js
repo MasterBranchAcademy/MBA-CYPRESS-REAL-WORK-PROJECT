@@ -13,7 +13,7 @@ describe('User Login Test', () => {
             user = userInfo
         })
     })
-    it.only('Kullanici login yapabilmelli', () => {
+    it('Kullanici login yapabilmelli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)        
         cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
@@ -21,4 +21,16 @@ describe('User Login Test', () => {
         loginPage.userLogin(user)            
         cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.LOGIN_PAGE.LOGGED_AS_TEXT).should('be.visible')
     });
+    it("Kullanici yanliş email ve password ile giriş yaptiginda  uyari mesaji alabilmeli", () => {
+        user.userLoginPage.emailAddress = "testlogin@mail.com"
+        homePage.visitPage()
+        cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
+        cy.getBySel(LOCATORS.LOGIN_PAGE.LOGIN_ACCOUNT_TEXT).should('have.text', user.userLoginPage.loginAccountText)
+        loginPage.userLogin(user) 
+        cy.getBySel(LOCATORS.LOGIN_PAGE.LOGIN_ERROR_MESSAGE).should('have.text', user.loginPage.errorText)
+
+    })
+
+
+
 }); 
