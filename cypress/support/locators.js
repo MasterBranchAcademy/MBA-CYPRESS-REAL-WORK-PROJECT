@@ -16,16 +16,11 @@ const LOCATORS = {
     LOGIN_EMAIL: "login-email",
     LOGIN_PASSWORD: "login-password",
     LOGIN_BTN: "login-button",
-<<<<<<< HEAD
 
-    LOGIN_ACOUNT_TEXT: ".login-form > h2",
-    NEW_USER_TEXT: ".signup-form > h2",
     LOGIN_ERROR_MESSAGE: '[style="color: red;"]',
-=======
     LOGIN_ACCOUNT_TEXT: ".login-form > h2",
     NEW_USER_TEXT: ".signup-form > h2",
     LOGGED_AS_TEXT: "li:nth-child(10) > a",
->>>>>>> ad81195a3b3ea67551a4ac488006f60b24759911
   },
 
   SIGNUP_PAGE: {

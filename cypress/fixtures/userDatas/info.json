@@ -6,7 +6,6 @@
 
   "loginPage":{
     "newUserText": "New User Signup!",
-    "loginToAccountText":"Login to your account",
     "errorText":"Your email or password is incorrect!"
   },
 
