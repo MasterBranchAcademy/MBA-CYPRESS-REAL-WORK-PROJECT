@@ -17,7 +17,9 @@ const LOCATORS = {
     LOGIN_PASSWORD: "login-password",
     LOGIN_BTN: "login-button",
 
+    LOGIN_ACOUNT_TEXT:".login-form > h2",
     NEW_USER_TEXT: ".signup-form > h2",
+    LOGIN_ERROR_MESSAGE:'[style="color: red;"]',
   },
 
   SIGNUP_PAGE: {

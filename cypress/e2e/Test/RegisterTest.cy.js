@@ -16,11 +16,11 @@ describe('Register Test', () => {
         })
     })
 
-    after(() => {
+   /*after(() => {
         cy.deleteAccount();
-    });
+    });*/
 
-    it('Kullanici Hesap Olusturabilmeli', () => {
+      it('Kullanici Hesap Olusturabilmeli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)        
         cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
@@ -32,5 +32,6 @@ describe('Register Test', () => {
         cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CONTINUE_BTN).click()        
         cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.SIGNUP_PAGE.LOGGED_AS_TEXT).should('be.visible')
     });
+
 
 });
