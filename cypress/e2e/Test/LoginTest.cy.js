@@ -13,7 +13,7 @@ describe('User Login Test', () => {
             user = userInfo
         })
     })
-    it.only('Kullanici login yapabilmelli', () => {
+    it('Kullanici login yapabilmelli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)        
         cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()

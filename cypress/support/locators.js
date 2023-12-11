@@ -55,5 +55,19 @@ const LOCATORS = {
     ACCOUNT_DELETED_TEXT: "account-deleted",
     CONTINUE_BTN: "continue-button",
   },
+  PAYMENT_PAGE: {
+    ADD_TO_CART_BTN: "div:nth-child(11) > div > div.single-products > div.product-overlay > div > a",
+    CONTINUE_SHOPPING: ".modal-footer",
+    CART_BTN: "header#header li:nth-child(3) > a",
+    PROCEED_TO_CHECKOUT_BTN: "section#do_action div > a",
+    DESCRIPTION_FORM: ".form-control",
+    PLACE_ORDER_BTN: "section#cart_items div:nth-child(7) > a",
+    NAME_ON_CARD: "name-on-card",
+    CARD_NUMBER: "card-number",
+    CVC_NUMBER: "cvc",
+    EXPIRATION_MONTH: "expiry-month",
+    EXPIRATION_YEAR: "expiry-year",
+    PAY_AND_CONFIRM_ORDER_BTN: "pay-button",
+  },
 };
 export default LOCATORS;
