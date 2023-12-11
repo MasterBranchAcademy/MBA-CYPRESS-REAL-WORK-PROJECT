@@ -16,6 +16,8 @@ const LOCATORS = {
     LOGIN_EMAIL: "login-email",
     LOGIN_PASSWORD: "login-password",
     LOGIN_BTN: "login-button",
+
+    LOGIN_ERROR_MESSAGE: '[style="color: red;"]',
     LOGIN_ACCOUNT_TEXT: ".login-form > h2",
     NEW_USER_TEXT: ".signup-form > h2",
     LOGGED_AS_TEXT: "li:nth-child(10) > a",
@@ -68,6 +70,19 @@ const LOCATORS = {
     EXPIRATION_MONTH: "expiry-month",
     EXPIRATION_YEAR: "expiry-year",
     PAY_AND_CONFIRM_ORDER_BTN: "pay-button",
+  },
+  ADD_TO_CART: {
+    PRODUCTS: '[href="/products"]',
+    PRODUCT_1: '[data-product-id="1"]',
+    PRODUCT_2: '[data-product-id="2"]',
+    COUNTINUE_SHOPPING: '.btn.btn-success.close-modal.btn-block',
+    WIEW_CART: '[class="text-center"] a',
+    PRODUCT_1_PRICE: '#product-1 .cart_price',
+    PRODUCT_2_PRICE: '#product-2 .cart_price',
+    PRODUCT_1_QUANTITY: '#product-1 .disabled',
+    PRODUCT_2_QUANTITY: '#product-2 .disabled',
+    PRODUCT_1_TOTAL: '#product-1 .cart_total_price',
+    PRODUCT_2_TOTAL: '#product-2 .cart_total_price',
   },
 };
 export default LOCATORS;

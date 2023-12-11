@@ -6,7 +6,7 @@
 
   "loginPage":{
     "newUserText": "New User Signup!",
-    "loginToAccountText": "Login to your account"
+    "errorText":"Your email or password is incorrect!"
   },
 
   "signUpPage":{
@@ -29,7 +29,9 @@
     "state": "Ontario",
     "city": "Toronto",
     "zipcode": "456879",
-    "mobilNumber": "+145647898456"
+    "mobilNumber": "+145647898456",
+    "wrongPassword":"1234"
+   
   },
   "userLoginPage":{
     "loginAccountText": "Login to your account",
@@ -48,4 +50,6 @@
     "expirationYear": "2025",
     "product": "Sleeves Printed Top - White"
   }
+
+
 }
