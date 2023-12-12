@@ -14,7 +14,7 @@ describe("Remove Products From Cart", () => {
         })
     })
  it("Kullanici istediği bir urunu sepetten çikartabilmeli", () => {
-        testPage.visitPage()
+        homePage.visitPage()
         cy.contains(user.home.homePageText).should('be.visible')
         cy.contains(user.assertion.product).trigger('mouseover')
         cy.getBySel(LOCATORS.REMOVE_PRODUCT_PAGE.ADD_TO_CART_BTN).click({ force: true })
