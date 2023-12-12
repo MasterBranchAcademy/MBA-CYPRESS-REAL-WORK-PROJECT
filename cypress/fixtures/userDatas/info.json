@@ -37,6 +37,18 @@
     "loginAccountText": "Login to your account",
     "emailAddress": "kamil@mail.com",
     "password": "1234567"
+  },
+  "paymentPage":{
+    "addressDetails": "Address Details",
+    "reviewYourOrder": "Review Your Order",
+    "description": "LOOKS GOOD TO ME",
+    "confirmText": "Congratulations! Your order has been confirmed!",
+    "NameOnCard": "kamil",
+    "CardNumber": "1234567890",
+    "cvc": "333",
+    "expirationMonth": "12",
+    "expirationYear": "2025",
+    "product": "Sleeves Printed Top - White"
   }
 
 
