@@ -6,6 +6,7 @@ const LOCATORS = {
   HOME_PAGE: {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
+    PRODUCTS_BTN: '[href="/products"]',
   },
 
   LOGIN_PAGE: {
@@ -54,5 +55,11 @@ const LOCATORS = {
     ACCOUNT_DELETED_TEXT: "account-deleted",
     CONTINUE_BTN: "continue-button",
   },
-};
+  PRODUCTS_PAGE: {
+    SEARCH_BOX: "#search_product",
+    ALL_PRODUCTS_TEXT: "h2.title",
+    SEARCH_ITEM: "#submit_search",
+    SEARCHED_PRODUCTS_TEXT: "h2.title.text-center"
+  },
+}
 export default LOCATORS;
