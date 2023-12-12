@@ -13,7 +13,6 @@ const LOCATORS = {
     LOGIN_EMAIL: "login-email",
     LOGIN_PASSWORD: "login-password",
     LOGIN_BTN: "login-button",
-
     LOGIN_ERROR_MESSAGE: '[style="color: red;"]',
     LOGIN_ACCOUNT_TEXT: ".login-form > h2",
     NEW_USER_TEXT: ".signup-form > h2",
@@ -56,6 +55,7 @@ const LOCATORS = {
     CONTINUE_SHOPPING: ".modal-footer",
     CART_BTN: "header#header li:nth-child(3) > a",
     X_BUTTON: ".cart_quantity_delete",
+    },
   PAYMENT_PAGE: {
     ADD_TO_CART_BTN: "div:nth-child(11) > div > div.single-products > div.product-overlay > div > a",
     CONTINUE_SHOPPING: ".modal-footer",
