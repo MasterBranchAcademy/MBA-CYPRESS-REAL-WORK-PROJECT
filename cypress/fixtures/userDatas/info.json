@@ -3,16 +3,13 @@
     "homePageText": "Full-Fledged practice website for Automation Engineers",
     "title": "Automation Exercise"
   },
-
   "loginPage":{
     "newUserText": "New User Signup!",
     "loginToAccountText": "Login to your account"
   },
-
   "signUpPage":{
     "enterAccountText": "Enter Account Information"
   },
-
   "userInfo": {
     "userName": "John",
     "email": "john_wick@mail.com",
@@ -35,5 +32,9 @@
     "loginAccountText": "Login to your account",
     "emailAddress": "kamil@mail.com",
     "password": "1234567"
+  },
+  "assertion":{
+    "assertionText": "Cart is empty!",
+    "product": "Sleeves Printed Top - White"
   }
 }
