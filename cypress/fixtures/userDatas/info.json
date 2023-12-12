@@ -36,6 +36,7 @@
   },
   "assertion":{
     "assertionText": "Cart is empty!",
+     },
   "paymentPage":{
     "addressDetails": "Address Details",
     "reviewYourOrder": "Review Your Order",
