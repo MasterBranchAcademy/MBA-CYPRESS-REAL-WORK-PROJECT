@@ -55,5 +55,20 @@ const LOCATORS = {
     ACCOUNT_DELETED_TEXT: "account-deleted",
     CONTINUE_BTN: "continue-button",
   },
+
+  CONTACT_US_PAGE:{
+    CONTACT_US_BTN:'a[href="/contact_us"]',
+    GET_IN_TUCH_TEXT:"h2.title.text-center:nth-child(2)",
+    NAME: "[data-qa='name']",
+    EMAIL: "[data-qa='email']",
+    SUBJECT: "[data-qa='subject']",
+    MESSAGE: "[data-qa='message']",
+    UPLOAD_FILE: '[name="upload_file"]',
+    SUBMIT_BTN: '[name="submit"]',
+    SUCCESS : '[class="status alert alert-success"]',
+    HOME :'[class="fa fa-angle-double-left"]',
+    HOMEVISIBLE :'[class="fa fa-home"]'
+
+  }
 };
 export default LOCATORS;

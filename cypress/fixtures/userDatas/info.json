@@ -15,7 +15,7 @@
 
   "userInfo": {
     "userName": "John",
-    "email": "john_wick@mail.com",
+    "email": "joh_wick@mail.com",
     "password": "1234567",
     "dayOfBirth": "1",
     "monthOfBirth": "January",
@@ -35,5 +35,12 @@
     "loginAccountText": "Login to your account",
     "emailAddress": "kamil@mail.com",
     "password": "1234567"
+  },
+  "contactPageInfo" :{
+    "name":"John",
+    "email":"john_wick@mail.com",
+    "subject":"Contact Form",
+    "message":"The relevant file is attached"
+    
   }
 }
