@@ -69,6 +69,10 @@ const LOCATORS = {
     PRODUCT_2_QUANTITY: '#product-2 .disabled',
     PRODUCT_1_TOTAL: '#product-1 .cart_total_price',
     PRODUCT_2_TOTAL: '#product-2 .cart_total_price',
+    RECOMENDED_ITEMS: '.recommended_items',
+    ADD_RECOMENDED: '.recommended_items .item.active .add-to-cart',
+    WIEW_RECOMMENDCART: '#cartModal u',
+    CART_PRODUCT: '#product-4 h4 > a',
   },
 
 
