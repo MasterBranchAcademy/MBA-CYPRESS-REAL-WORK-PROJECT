@@ -4,10 +4,10 @@ const LOCATORS = {
   },
 
 
-  TestCase_PAGE: {
-   TestCase:'.nav > li > a[href="/test_cases"]'
+  TestCases_PAGE: {
+   TestCases:'.nav > li > a[href="/test_cases"]'
   },
-  TestCase_Text: {
+  TestCases_Text: {
     TextTitle: ".text-center>b"
   },
 
