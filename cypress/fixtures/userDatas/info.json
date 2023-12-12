@@ -35,7 +35,7 @@
     "password": "1234567"
   },
   "assertion":{
-    "assertionText": "Cart is empty!",
+    "assertionText": "Cart is empty!"
      },
   "paymentPage":{
     "addressDetails": "Address Details",
