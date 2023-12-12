@@ -17,7 +17,7 @@ describe('Register Test', () => {
     })
 
     after(() => {
-        cy.deleteAccount();
+       cy.deleteAccount();
     });
 
     it('Kullanici Hesap Olusturabilmeli', () => {
@@ -34,3 +34,4 @@ describe('Register Test', () => {
     });
 
 });
+

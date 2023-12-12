@@ -3,19 +3,16 @@
     "homePageText": "Full-Fledged practice website for Automation Engineers",
     "title": "Automation Exercise"
   },
-
-  "loginPage":{
+  "loginPage": {
     "newUserText": "New User Signup!",
     "loginToAccountText": "Login to your account"
   },
-
-  "signUpPage":{
+  "signUpPage": {
     "enterAccountText": "Enter Account Information"
   },
-
   "userInfo": {
     "userName": "John",
-    "email": "john_wick@mail.com",
+    "email": "johmp_wick@mail.com",
     "password": "1234567",
     "dayOfBirth": "1",
     "monthOfBirth": "January",
@@ -30,5 +27,8 @@
     "city": "Toronto",
     "zipcode": "456879",
     "mobilNumber": "+145647898456"
+  },
+  "reviewText": {
+    "reviewMessage": "fast delivery and high quality"
   }
 }
