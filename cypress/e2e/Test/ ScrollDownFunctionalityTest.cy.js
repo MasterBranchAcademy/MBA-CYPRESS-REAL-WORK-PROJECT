@@ -25,6 +25,5 @@ describe('Scroll Down Functionality Test', () => {
         cy.getBySel(LOCATORS.PAGE_SCROLL.ARROW_BTN).click().trigger('mouseup','topRight')
         cy.getBySel(LOCATORS.PAGE_SCROLL.HOMETEXT).should('be.visible')
     });
-    
-});
+    });
     
