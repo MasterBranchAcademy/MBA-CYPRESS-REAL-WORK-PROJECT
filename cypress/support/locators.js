@@ -56,6 +56,24 @@ const LOCATORS = {
     ACCOUNT_DELETED_TEXT: "account-deleted",
     CONTINUE_BTN: "continue-button",
   },
+  PRODUCT_PAGE: {
+    PRODUCT_BTN: "header#header li:nth-child(2) > a",
+    ALL_PRODUCT: ".title.text-center",
+    VIEW_PRODUCT_BTN: "a[href='/product_details/1']",
+    REVIEW_TEXT: "div.col-sm-12 > ul > li > a",
+    NAME_BOX: "#name",
+    EMAIL_BOX: "#email",
+    TEXT_AREA: "textarea#review",
+    SUBMIT_BTN: "#button-review",
+    VERIFYING: "div#review-section div > div"
+  },
+  CART_PAGE: {
+    CART_BTN: "header#header li:nth-child(3) > a",
+    SUBSCRITION_TEXT: "footer#footer h2",
+    EMAIL_BOX: "#susbscribe_email",
+    SUBSCRITION_BTN: "#subscribe",
+    VERIFY_TEXT: "#success-subscribe",
+  },
   REMOVE_PRODUCT_PAGE: {
     ADD_TO_CART_BTN: "div:nth-child(11) > div > div.single-products > div.product-overlay > div > a",
     CONTINUE_SHOPPING: ".modal-footer",
