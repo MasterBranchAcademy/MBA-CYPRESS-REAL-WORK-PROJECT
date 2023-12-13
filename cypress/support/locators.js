@@ -72,8 +72,8 @@ const LOCATORS = {
     SUBSCRITION_TEXT: "footer#footer h2",
     EMAIL_BOX: "#susbscribe_email",
     SUBSCRITION_BTN: "#subscribe",
-    VERIFY_TEXT: "#success-subscribe"
-  }
+    VERIFY_TEXT: "#success-subscribe",
+  },
   REMOVE_PRODUCT_PAGE: {
     ADD_TO_CART_BTN: "div:nth-child(11) > div > div.single-products > div.product-overlay > div > a",
     CONTINUE_SHOPPING: ".modal-footer",
