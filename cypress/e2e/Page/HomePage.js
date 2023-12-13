@@ -5,5 +5,5 @@ class HomePage {
             .visit("/")
     }
 
-}
+    }
 export default HomePage
