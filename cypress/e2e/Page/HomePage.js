@@ -4,5 +4,5 @@ class HomePage {
         cy.visit("/")
     }
 
-}
+    }
 export default HomePage
