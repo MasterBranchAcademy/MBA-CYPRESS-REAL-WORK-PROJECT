@@ -74,7 +74,15 @@ const LOCATORS = {
     WIEW_RECOMMENDCART: '#cartModal u',
     CART_PRODUCT: '#product-4 h4 > a',
   },
-
-
+  Brands: {
+    productsButton: '[href="/products"]',
+    brandsSidebar: '.brands_products',
+    brandPoloLink: '[href="/brand_products/Polo"]',
+    brandProducts: '.brand-products',
+    VerifyBrandPolo: '[href="/product_details/1"]',
+    brandHMLink: '[href="/brand_products/H&M"]',
+    VerifyBrandHM: '[href="/product_details/6"]',
+  },
 };
+
 export default LOCATORS;
