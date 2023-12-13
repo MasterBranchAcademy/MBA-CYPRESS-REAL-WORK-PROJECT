@@ -3,23 +3,20 @@
     "homePageText": "Full-Fledged practice website for Automation Engineers",
     "title": "Automation Exercise"
   },
-
   "loginPage":{
     "newUserText": "New User Signup!",
     "errorText":"Your email or password is incorrect!"
   },
-
   "signUpPage":{
     "enterAccountText": "Enter Account Information"
   },
-  "singUpWithExistingEmail":{
-    "errorMessage":"Email Address already exist!"
-    
-  },
 
+  "singUpWithExistingEmail":{
+    "errorMessage":"Email Address already exist!"   
+  },
   "userInfo": {
     "userName": "John",
-    "email": "john_wick12@mail.com",
+    "email": "jim_wick@mail.com",
     "password": "1234567",
     "dayOfBirth": "1",
     "monthOfBirth": "January",
@@ -33,15 +30,32 @@
     "state": "Ontario",
     "city": "Toronto",
     "zipcode": "456879",
+    "mobilNumber": "+145647898456"
+  },
+  "reviewText": {
+    "reviewMessage": "fast delivery and high quality",
+
     "mobilNumber": "+145647898456",
-    "wrongPassword":"1234"
-   
+    "wrongPassword":"1234"  
   },
   "userLoginPage":{
     "loginAccountText": "Login to your account",
     "emailAddress": "kamil@mail.com",
     "password": "1234567"
+  },
+  "assertion":{
+    "assertionText": "Cart is empty!"
+     },
+  "paymentPage":{
+    "addressDetails": "Address Details",
+    "reviewYourOrder": "Review Your Order",
+    "description": "LOOKS GOOD TO ME",
+    "confirmText": "Congratulations! Your order has been confirmed!",
+    "NameOnCard": "kamil",
+    "CardNumber": "1234567890",
+    "cvc": "333",
+    "expirationMonth": "12",
+    "expirationYear": "2025",
+    "product": "Sleeves Printed Top - White"
   }
-
-
 }
