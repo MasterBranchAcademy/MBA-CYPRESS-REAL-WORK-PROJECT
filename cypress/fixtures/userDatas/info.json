@@ -3,16 +3,13 @@
     "homePageText": "Full-Fledged practice website for Automation Engineers",
     "title": "Automation Exercise"
   },
-
   "loginPage":{
     "newUserText": "New User Signup!",
     "errorText":"Your email or password is incorrect!"
   },
-
   "signUpPage":{
     "enterAccountText": "Enter Account Information"
   },
-
   "userInfo": {
     "userName": "John",
     "email": "jim_wick@mail.com",
@@ -29,15 +26,22 @@
     "state": "Ontario",
     "city": "Toronto",
     "zipcode": "456879",
+    "mobilNumber": "+145647898456"
+  },
+  "reviewText": {
+    "reviewMessage": "fast delivery and high quality",
+
     "mobilNumber": "+145647898456",
-    "wrongPassword":"1234"
-   
+    "wrongPassword":"1234"  
   },
   "userLoginPage":{
     "loginAccountText": "Login to your account",
     "emailAddress": "kamil@mail.com",
     "password": "1234567"
   },
+  "assertion":{
+    "assertionText": "Cart is empty!"
+     },
   "paymentPage":{
     "addressDetails": "Address Details",
     "reviewYourOrder": "Review Your Order",
@@ -57,6 +61,4 @@
     "message":"The relevant file is attached"
     
   }
-
-
 }
