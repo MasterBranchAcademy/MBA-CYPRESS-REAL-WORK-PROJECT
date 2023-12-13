@@ -7,8 +7,13 @@ class LoginPage {
     cy.getByDataQa(LOCATORS.LOGIN_PAGE.SIGNUP_EMAIL).type(user.userInfo.email);
     cy.getByDataQa(LOCATORS.LOGIN_PAGE.SIGNUP_BTN).click();
   }
+  userLogin(user) {
+    cy.visit("/login");
+    cy.getByDataQa(LOCATORS.LOGIN_PAGE.LOGIN_EMAIL).type(user.userLoginPage.emailAddress);
+    cy.getByDataQa(LOCATORS.LOGIN_PAGE.LOGIN_PASSWORD).type(user.userLoginPage.password);
+    cy.getByDataQa(LOCATORS.LOGIN_PAGE.LOGIN_BTN).click();
+  }
 }
-
 class reviewPage{
 
   review(user){
@@ -16,5 +21,4 @@ class reviewPage{
     cy.get
   }
 }
-
 export default LoginPage;
