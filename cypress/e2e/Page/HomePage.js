@@ -1,8 +1,7 @@
 class HomePage {
 
     visitPage() {
-        cy
-            .visit("/")
+        cy.visit("/")
     }
 
     }
