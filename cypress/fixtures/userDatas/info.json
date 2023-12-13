@@ -3,6 +3,11 @@
     "homePageText": "Full-Fledged practice website for Automation Engineers",
     "title": "Automation Exercise"
   },
+  "loginPage": {
+    "newUserText": "New User Signup!",
+    "errorText":"Your email or password is incorrect!"
+  },
+  
   "loginPage":{
     "newUserText": "New User Signup!",
     "errorText":"Your email or password is incorrect!"
@@ -12,7 +17,7 @@
   },
   "userInfo": {
     "userName": "John",
-    "email": "jim_wick@mail.com",
+    "email": "jime_wick@mail.com",
     "password": "1234567",
     "dayOfBirth": "1",
     "monthOfBirth": "January",
@@ -28,9 +33,13 @@
     "zipcode": "456879",
     "mobilNumber": "+145647898456"
   },
+  
+  "productPage": {
+    "allProductsText": "ALL PRODUCTS",
+    "productName": "Blue Top"
+  },
   "reviewText": {
     "reviewMessage": "fast delivery and high quality",
-
     "mobilNumber": "+145647898456",
     "wrongPassword":"1234"  
   },
