@@ -3,7 +3,7 @@ import HomePage from "../Page/HomePage";
 import LoginPage from "../Page/LoginPage";
 import SignupPage from "../Page/SignupPage";
 
-describe("Remove Products From Cart", () => {
+describe('Remove Products From Cart', () => {
     const homePage = new HomePage
     const loginPage = new LoginPage
     const signupPage = new SignupPage
@@ -13,7 +13,7 @@ describe("Remove Products From Cart", () => {
             user = userInfo
         })
     })
- it("Kullanici istediği bir urunu sepetten çikartabilmeli", () => {
+ it('Kullanici istediği bir urunu sepetten cikartabilmeli', () => {
         homePage.visitPage()
         cy.contains(user.home.homePageText).should('be.visible')
         cy.contains(user.assertion.product).trigger('mouseover')
