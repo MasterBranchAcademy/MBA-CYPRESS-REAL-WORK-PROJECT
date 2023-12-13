@@ -15,4 +15,11 @@ class LoginPage {
   }
 
 }
+class reviewPage{
+
+  review(user){
+
+    cy.get
+  }
+}
 export default LoginPage;
