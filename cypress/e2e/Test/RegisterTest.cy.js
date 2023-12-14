@@ -17,7 +17,7 @@ describe('Register Test', () => {
     })
 
     after(() => {
-        cy.deleteAccount();
+       cy.deleteAccount();
     });
 
     it('Kullanici Hesap Olusturabilmeli', () => {
@@ -32,6 +32,5 @@ describe('Register Test', () => {
         cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CONTINUE_BTN).click()
         cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER, LOCATORS.SIGNUP_PAGE.LOGGED_AS_TEXT).should('be.visible')
     });
-
-
 });
+
