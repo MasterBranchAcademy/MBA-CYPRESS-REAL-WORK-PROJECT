@@ -16,13 +16,11 @@ describe('User login Test', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)
         cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
-        cy.getByDataQa(LOCATORS.LOGIN_PAGE.SIGNUP_NAME).type(user.userInfo.userName);
-        cy.getByDataQa(LOCATORS.LOGIN_PAGE.SIGNUP_EMAIL).type(user.userInfo.email);
+        cy.getByDataQa(LOCATORS.LOGIN_PAGE.SIGNUP_NAME).type(user.singUpWithExistingEmail.userName);
+        cy.getByDataQa(LOCATORS.LOGIN_PAGE.SIGNUP_EMAIL).type(user.singUpWithExistingEmail.email);
         cy.getByDataQa(LOCATORS.LOGIN_PAGE.SIGNUP_BTN).click();
         cy.contains(user.singUpWithExistingEmail.errorMessage).should('be.visible')
     });
-
-
-})
+});
 
 
