@@ -7,6 +7,10 @@ const LOCATORS = {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
     PRODUCTS_BTN: '[href="/products"]',
+    SUBSCRIPTION_TEXT: ".single-widget",
+    INPUT_BOX_FOR_EMAIL: "#susbscribe_email",
+    ARROW_BTN: "#subscribe",
+    SUCCESS_SUBS_MSG_: ".alert-success.alert"
   },
 
   LOGIN_PAGE: {
