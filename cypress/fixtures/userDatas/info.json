@@ -13,7 +13,7 @@
   },
   "userInfo": {
     "userName": "John",
-    "email": "jim_wick@mail.com",
+    "email": "jime_wick@mail.com",
     "password": "1234567",
     "dayOfBirth": "1",
     "monthOfBirth": "January",
@@ -31,7 +31,10 @@
   },
   "productPage": {
     "allProductsText": "ALL PRODUCTS",
-    "productName": "Blue Top",
+    "productName": "Blue Top"
+  },
+  "reviewText": {
+    "reviewMessage": "fast delivery and high quality",
     "mobilNumber": "+145647898456",
     "wrongPassword": "1234"
   },
@@ -39,6 +42,9 @@
     "loginAccountText": "Login to your account",
     "emailAddress": "kamil@mail.com",
     "password": "1234567"
+  },
+  "assertion": {
+    "assertionText": "Cart is empty!"
   },
   "paymentPage": {
     "addressDetails": "Address Details",

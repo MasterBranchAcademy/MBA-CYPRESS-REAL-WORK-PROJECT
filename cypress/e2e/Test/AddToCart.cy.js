@@ -30,4 +30,13 @@ describe("Add to Cart Tests", () => {
 
     })
 
+    it.only('should add recommended items to the cart', () => {
+        cy.visit('/')
+        cy.scrollTo('bottom')
+        cy.getBySel(LOCATORS.ADD_TO_CART.RECOMENDED_ITEMS).should('be.visible')
+        cy.getBySel(LOCATORS.ADD_TO_CART.ADD_RECOMENDED).first().click()
+        cy.getBySel(LOCATORS.ADD_TO_CART.WIEW_RECOMMENDCART).contains('View Cart').click()
+        cy.getBySel(LOCATORS.ADD_TO_CART.CART_PRODUCT).should('be.visible')
+      });    
+
 })

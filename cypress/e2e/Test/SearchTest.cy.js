@@ -29,10 +29,10 @@ describe.only("Searching Test", () => {
     it("Kullanici mevcut butun urunleri goruntuleyebilmeli", () => {
 
         cy.getBySel(LOCATORS.HOME_PAGE.PRODUCTS_BTN).click();
-        cy.getBySel(LOCATORS.PRODUCTS_PAGE.ALL_PRODUCTS_TEXT).should("be.visible")
-        cy.getBySel(LOCATORS.PRODUCTS_PAGE.SEARCH_BOX).type(user.productPage.productName);
-        cy.getBySel(LOCATORS.PRODUCTS_PAGE.SEARCH_ITEM).click();
-        cy.getBySel(LOCATORS.PRODUCTS_PAGE.SEARCHED_PRODUCTS_TEXT).should("be.visible")
+        cy.getBySel(LOCATORS.PRODUCT_PAGE.ALL_PRODUCTS_TEXT).should('be.visible')
+        cy.getBySel(LOCATORS.PRODUCT_PAGE.SEARCH_BOX).type(user.productPage.productName);
+        cy.getBySel(LOCATORS.PRODUCT_PAGE.SEARCH_ITEM).click();
+        cy.getBySel(LOCATORS.PRODUCT_PAGE.SEARCHED_PRODUCTS_TEXT).should('be.visible')
     })
 
 })

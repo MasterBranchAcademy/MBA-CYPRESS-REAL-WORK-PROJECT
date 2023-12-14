@@ -1,3 +1,5 @@
+import LOCATORS from "../../support/locators"
+
 class HomePage {
 
     visitPage() {
