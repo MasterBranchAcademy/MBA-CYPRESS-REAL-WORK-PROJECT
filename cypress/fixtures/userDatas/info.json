@@ -12,7 +12,9 @@
   },
 
   "singUpWithExistingEmail":{
-    "errorMessage":"Email Address already exist!"   
+    "errorMessage":"Email Address already exist!",
+     "userName": "kamil",
+    "email": "kamil@mail.com"
   },
   "userInfo": {
     "userName": "John",
