@@ -134,11 +134,12 @@ const LOCATORS = {
   },
     
   PRODUCT_QUANTITY: {
-    VIEW_PRODUCT: '[href="/product_details/1"]',
-    ADD_TO_CART_BUTTON: '[type=button]',
-    VIEW_CART_BUTTON: '[href="/view_cart"]>u',
+    VIEW_PRODUCT: "[href='/product_details/1']",
+    ADD_TO_CART_BUTTON: "[type=button]",
+    VIEW_CART_BUTTON: "[href='/view_cart']>u",
     QUANTITY_DETAIL: "#product-1 button",
   },
+    
 };
 
 export default LOCATORS;
