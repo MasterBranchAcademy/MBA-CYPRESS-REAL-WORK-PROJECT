@@ -2,11 +2,16 @@ const LOCATORS = {
   EXAMPLE_PAGE: {
     EXAMPLE: ".example",
   },
+
+  TestCase_PAGE: {
+    TestCase: '.nav > li > a[href="/test_cases"]',
+  },
+
  TestCases_PAGE: {
-   TestCases:'.nav > li > a[href="/test_cases"]'
+   TestCases:'.nav > li > a[href="/test_cases"]',
   },
   TestCases_Text: {
-    TextTitle: ".text-center>b"
+    TextTitle: ".text-center>b",
   },
   HOME_PAGE: {
     LOGIN_BTN: 'a[href="/login"]',
@@ -128,6 +133,14 @@ const LOCATORS = {
     brandHMLink: '[href="/brand_products/H&M"]',
     VerifyBrandHM: '[href="/product_details/6"]',
   },
+    
+  PRODUCT_QUANTITY: {
+    VIEW_PRODUCT: "[href='/product_details/1']",
+    ADD_TO_CART_BUTTON: "[type=button]",
+    VIEW_CART_BUTTON: "[href='/view_cart']>u",
+    QUANTITY_DETAIL: "#product-1 button",
+  },
+    
 };
 
 export default LOCATORS;
