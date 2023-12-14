@@ -1,3 +1,5 @@
+import LOCATORS from "../../support/locators"
+
 class HomePage {
 
     visitPage() {
@@ -5,5 +7,5 @@ class HomePage {
             .visit("/")
     }
 
-    }
+}
 export default HomePage

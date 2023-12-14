@@ -5,7 +5,7 @@ const LOCATORS = {
 
 
   TestCase_PAGE: {
-   TestCase:'.nav > li > a[href="/test_cases"]'
+    TestCase: '.nav > li > a[href="/test_cases"]'
   },
   TestCase_Text: {
     TextTitle: ".text-center>b"
@@ -78,7 +78,12 @@ const LOCATORS = {
     PRODUCT_1_TOTAL: '#product-1 .cart_total_price',
     PRODUCT_2_TOTAL: '#product-2 .cart_total_price',
   },
-
+  PRODUCT_QUANTITY: {
+    VIEW_PRODUCT: '[href="/product_details/1"]',
+    ADD_TO_CART_BUTTON: '[type=button]',
+    VIEW_CART_BUTTON: '[href="/view_cart"]>u',
+    QUANTITY_DETAIL: '#product-1 button'
+  }
 
 };
 export default LOCATORS;
