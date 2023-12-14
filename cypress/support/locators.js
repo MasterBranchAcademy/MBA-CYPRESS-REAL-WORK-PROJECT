@@ -123,6 +123,7 @@ const LOCATORS = {
     ADD_RECOMENDED: '.recommended_items .item.active .add-to-cart',
     WIEW_RECOMMENDCART: '#cartModal u',
     CART_PRODUCT: '#product-4 h4 > a',
+    PROCEED_TO_CHECKOUT_BTN:'.col-sm-6 .btn'
   },
   Brands: {
     productsButton: '[href="/products"]',
@@ -133,15 +134,12 @@ const LOCATORS = {
     brandHMLink: '[href="/brand_products/H&M"]',
     VerifyBrandHM: '[href="/product_details/6"]',
   },
-    
-    PROCEED_TO_CHECKOUT_BTN:'.col-sm-6 .btn'
-  },
-  PRODUCT_QUANTITY: {
+   PRODUCT_QUANTITY: {
     VIEW_PRODUCT: "[href='/product_details/1']",
     ADD_TO_CART_BUTTON: "[type=button]",
     VIEW_CART_BUTTON: "[href='/view_cart']>u",
-    QUANTITY_DETAIL: "#product-1 button",
-  },
+    QUANTITY_DETAIL: "#product-1 button"
+  }
     
 };
 
