@@ -11,6 +11,7 @@ const LOCATORS = {
   HOME_PAGE: {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
+    PRODUCTS_BTN: '[href="/products"]',
   },
   LOGIN_PAGE: {
     SIGNUP_NAME: "signup-name",
@@ -61,6 +62,7 @@ const LOCATORS = {
     ACCOUNT_DELETED_TEXT: "account-deleted",
     CONTINUE_BTN: "continue-button",
   },
+ 
   PRODUCT_PAGE: {
     PRODUCT_BTN: "header#header li:nth-child(2) > a",
     ALL_PRODUCT: ".title.text-center",
@@ -70,8 +72,13 @@ const LOCATORS = {
     EMAIL_BOX: "#email",
     TEXT_AREA: "textarea#review",
     SUBMIT_BTN: "#button-review",
-    VERIFYING: "div#review-section div > div"
+    VERIFYING: "div#review-section div > div",
+    SEARCH_BOX: "#search_product",
+    ALL_PRODUCTS_TEXT: "h2.title",
+    SEARCH_ITEM: "#submit_search",
+    SEARCHED_PRODUCTS_TEXT: "h2.title.text-center",
   },
+  
   CART_PAGE: {
     CART_BTN: "header#header li:nth-child(3) > a",
     SUBSCRITION_TEXT: "footer#footer h2",
@@ -85,6 +92,7 @@ const LOCATORS = {
     CART_BTN: "header#header li:nth-child(3) > a",
     X_BUTTON: ".cart_quantity_delete",
     },
+
   PAYMENT_PAGE: {
     ADD_TO_CART_BTN: "div:nth-child(11) > div > div.single-products > div.product-overlay > div > a",
     CONTINUE_SHOPPING: ".modal-footer",
