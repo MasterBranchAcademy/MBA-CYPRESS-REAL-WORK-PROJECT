@@ -12,6 +12,7 @@ const LOCATORS = {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
     PRODUCTS_BTN: '[href="/products"]',
+    CART_BUTTON: 'header#header li:nth-child(3) > a'
   },
   LOGIN_PAGE: {
     SIGNUP_NAME: "signup-name",
@@ -80,6 +81,8 @@ const LOCATORS = {
     EMAIL_BOX: "#susbscribe_email",
     SUBSCRITION_BTN: "#subscribe",
     VERIFY_TEXT: "#success-subscribe",
+    CART_DESCRIPTION: 'section#cart_items > div',
+    LOGIN_BTN_CART_PAGE: "header#header li:nth-child(4) > a"
   },
   REMOVE_PRODUCT_PAGE: {
     ADD_TO_CART_BTN: "div:nth-child(11) > div > div.single-products > div.product-overlay > div > a",
