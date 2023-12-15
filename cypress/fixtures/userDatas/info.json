@@ -62,5 +62,12 @@
     "expirationMonth": "12",
     "expirationYear": "2025",
     "product": "Sleeves Printed Top - White"
+  },
+  "contactPageInfo" :{
+    "name":"John",
+    "email":"john_wick@mail.com",
+    "subject":"Contact Form",
+    "message":"The relevant file is attached"
+    
   }
 }
