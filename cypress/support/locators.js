@@ -2,15 +2,21 @@ const LOCATORS = {
   EXAMPLE_PAGE: {
     EXAMPLE: ".example",
   },
+
+  TestCase_PAGE: {
+    TestCase: '.nav > li > a[href="/test_cases"]',
+  },
+
  TestCases_PAGE: {
-   TestCases:'.nav > li > a[href="/test_cases"]'
+   TestCases:'.nav > li > a[href="/test_cases"]',
   },
   TestCases_Text: {
-    TextTitle: ".text-center>b"
+    TextTitle: ".text-center>b",
   },
   HOME_PAGE: {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
+    PRODUCTS_BTN: '[href="/products"]',
   },
   LOGIN_PAGE: {
     SIGNUP_NAME: "signup-name",
@@ -56,6 +62,7 @@ const LOCATORS = {
     ACCOUNT_DELETED_TEXT: "account-deleted",
     CONTINUE_BTN: "continue-button",
   },
+ 
   PRODUCT_PAGE: {
     PRODUCT_BTN: "header#header li:nth-child(2) > a",
     ALL_PRODUCT: ".title.text-center",
@@ -65,8 +72,13 @@ const LOCATORS = {
     EMAIL_BOX: "#email",
     TEXT_AREA: "textarea#review",
     SUBMIT_BTN: "#button-review",
-    VERIFYING: "div#review-section div > div"
+    VERIFYING: "div#review-section div > div",
+    SEARCH_BOX: "#search_product",
+    ALL_PRODUCTS_TEXT: "h2.title",
+    SEARCH_ITEM: "#submit_search",
+    SEARCHED_PRODUCTS_TEXT: "h2.title.text-center",
   },
+  
   CART_PAGE: {
     CART_BTN: "header#header li:nth-child(3) > a",
     SUBSCRITION_TEXT: "footer#footer h2",
@@ -80,6 +92,7 @@ const LOCATORS = {
     CART_BTN: "header#header li:nth-child(3) > a",
     X_BUTTON: ".cart_quantity_delete",
     },
+
   PAYMENT_PAGE: {
     ADD_TO_CART_BTN: "div:nth-child(11) > div > div.single-products > div.product-overlay > div > a",
     CONTINUE_SHOPPING: ".modal-footer",
@@ -132,17 +145,18 @@ const LOCATORS = {
     SUCCESS : '[class="status alert alert-success"]',
     HOME :'[class="fa fa-angle-double-left"]',
     HOMEVISIBLE :'[class="fa fa-home"]'
-
   },
-
   PAGE_SCROLL:{
     SCROLL: '.single-widget h2',
     HOMETEXT:'#slider-carousel > div > div:nth-child(3) > div:nth-child(1) > h2',
     ARROW_BTN:'[class="fa fa-angle-up"]'
-  }
-
-
-
+  },    
+  PRODUCT_QUANTITY: {
+    VIEW_PRODUCT: "[href='/product_details/1']",
+    ADD_TO_CART_BUTTON: "[type=button]",
+    VIEW_CART_BUTTON: "[href='/view_cart']>u",
+    QUANTITY_DETAIL: "#product-1 button",
+  },    
 
 };
 
