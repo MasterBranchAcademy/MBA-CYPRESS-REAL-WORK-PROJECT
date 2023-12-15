@@ -18,11 +18,12 @@ const LOCATORS = {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
     PRODUCTS_BTN: '[href="/products"]',
+    CART_BUTTON: 'header#header li:nth-child(3) > a',
     SUBSCRIPTION_TEXT: ".single-widget",
     INPUT_BOX_FOR_EMAIL: "#susbscribe_email",
     ARROW_BTN: "#subscribe",
     SUCCESS_SUBS_MSG_: ".alert-success.alert",
-    CART_BTN: "a[href='/view_cart']"
+    CART_BTN: "a[href='/view_cart']",
   },
   LOGIN_PAGE: {
     SIGNUP_NAME: "signup-name",
@@ -95,6 +96,8 @@ const LOCATORS = {
     EMAIL_BOX: "#susbscribe_email",
     SUBSCRITION_BTN: "#subscribe",
     VERIFY_TEXT: "#success-subscribe",
+    CART_DESCRIPTION: 'section#cart_items > div',
+    LOGIN_BTN_CART_PAGE: "header#header li:nth-child(4) > a",
     SHOPPING_CART_TEXT: "#cart_items li.active",
     CHECKOUT_BTN: "#do_action div > a",
     CHECKOUT_MODAL_REGISTER_LOGIN_BTN: "#checkoutModal u",
