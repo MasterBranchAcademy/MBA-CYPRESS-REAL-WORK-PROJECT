@@ -19,4 +19,4 @@ Cypress.Commands.add("deleteAccount", () => {
   cy.getByDataQa(LOCATORS.DELETE_PAGE.CONTINUE_BTN).click()
 });
 
-import 'cypress-file-upload'
+

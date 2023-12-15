@@ -67,7 +67,6 @@ const LOCATORS = {
     ACCOUNT_DELETED_TEXT: "account-deleted",
     CONTINUE_BTN: "continue-button",
   },
-
   PRODUCT_PAGE: {
     PRODUCT_BTN: "header#header li:nth-child(2) > a",
     ALL_PRODUCT: ".title.text-center",
