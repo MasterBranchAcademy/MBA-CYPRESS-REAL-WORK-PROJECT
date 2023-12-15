@@ -18,3 +18,5 @@ Cypress.Commands.add("deleteAccount", () => {
   cy.getByDataQa(LOCATORS.DELETE_PAGE.ACCOUNT_DELETED_TEXT).should("be.visible")
   cy.getByDataQa(LOCATORS.DELETE_PAGE.CONTINUE_BTN).click()
 });
+
+import 'cypress-file-upload'
