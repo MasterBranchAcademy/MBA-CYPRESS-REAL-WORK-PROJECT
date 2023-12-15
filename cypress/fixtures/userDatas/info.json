@@ -7,11 +7,6 @@
     "newUserText": "New User Signup!",
     "errorText":"Your email or password is incorrect!"
   },
-  
-  "loginPage":{
-    "newUserText": "New User Signup!",
-    "errorText":"Your email or password is incorrect!"
-  },
   "signUpPage":{
     "enterAccountText": "Enter Account Information"
   },
