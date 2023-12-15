@@ -18,7 +18,11 @@ const LOCATORS = {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
     PRODUCTS_BTN: '[href="/products"]',
-    CART_BTN: "a[href='/view_cart']",
+    SUBSCRIPTION_TEXT: ".single-widget",
+    INPUT_BOX_FOR_EMAIL: "#susbscribe_email",
+    ARROW_BTN: "#subscribe",
+    SUCCESS_SUBS_MSG_: ".alert-success.alert",
+    CART_BTN: "a[href='/view_cart']"
   },
   LOGIN_PAGE: {
     SIGNUP_NAME: "signup-name",
