@@ -16,7 +16,7 @@ describe("Homepage Tests", () => {
         cy.contains(user.home.homePageText).should("be.visible")
     })
 })
-describe.only("Searching Test", () => {
+describe("Searching Test", () => {
     const productPage = new ProductPage()
     let user;
     const homePage = new HomePage()

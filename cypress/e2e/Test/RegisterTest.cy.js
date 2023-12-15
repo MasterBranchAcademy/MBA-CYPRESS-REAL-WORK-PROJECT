@@ -30,7 +30,7 @@ describe('Register Test', () => {
         signupPage.createAccount(user)
         cy.getByDataQa(LOCATORS.SIGNUP_PAGE.ACCOUNT_CREATED).should('be.visible')
         cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CONTINUE_BTN).click()
-        cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER, LOCATORS.SIGNUP_PAGE.LOGGED_AS_TEXT).should('be.visible')
+        cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER, LOCATORS.LOGIN_PAGE.LOGGED_AS_TEXT).should('be.visible')
     });
 });
 
