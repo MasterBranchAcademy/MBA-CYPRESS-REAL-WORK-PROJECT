@@ -1,11 +1,14 @@
 import LOCATORS from "../../support/locators";
 import HomePage from "../Page/HomePage";
 import LoginPage from "../Page/LoginPage";
+import PaymentPage from "../Page/PaymentPage";
 import SignupPage from "../Page/SignupPage";
 describe('User Login Test', () => {
     const homePage = new HomePage
     const loginPage = new LoginPage
     const signupPage = new SignupPage
+    const paymentPage = new PaymentPage
+
     let user;
 
     before(() => {
@@ -13,6 +16,10 @@ describe('User Login Test', () => {
             user = userInfo
         })
     })
+    after(() => {
+        cy.deleteAccount()
+    })
+
     it('Kullanici login yapabilmelli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)
@@ -30,33 +37,30 @@ describe('User Login Test', () => {
         cy.getBySel(LOCATORS.LOGIN_PAGE.LOGIN_ERROR_MESSAGE).should('have.text', user.loginPage.errorText)
 
     })
-    it.only("Kullanici kayit olmadan odeme yapamamali", () => {
+    it("Kullanici odeme yapmadan once kayit yapmali", () => {
         homePage.visitPage()
-        cy.contains(user.home.homePageText).should("be.visible")
-        cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
-        cy.getBySel(LOCATORS.LOGIN_PAGE.LOGIN_ACCOUNT_TEXT).should('have.text', user.userLoginPage.loginAccountText)
-        loginPage.userLogin(user)
-        cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER, LOCATORS.LOGIN_PAGE.LOGGED_AS_TEXT).should('be.visible')
-        cy.getBySel(LOCATORS.ADD_TO_CART.PRODUCT_1).contains('Add to cart').click()
-        cy.getBySel(LOCATORS.ADD_TO_CART.VIEW_CART).click()
-        cy.getBySel(LOCATORS.ADD_TO_CART.PRODUCT_1_PRICE).should('contain','Rs. 500')
-        cy.getBySel(LOCATORS.ADD_TO_CART.PROCEED_TO_CHECKOUT_BTN).click()
+        cy.title().should('eq', user.home.title)
+        loginPage.clickLoginBtn()
+        cy.contains(user.loginPage.newUserText).should('be.visible')
+        loginPage.signUp(user)
+        cy.contains(user.signUpPage.enterAccountText).should('be.visible')
+        signupPage.createAccount(user)
+        signupPage.accountCreatedText().should('be.visible')
+        signupPage.clickContinueBtn()
+        cy.contains(user.home.loggedUserNameText).should('be.visible')
+        homePage.clickProduct_1()
+        homePage.clickView_CartBtn()
+        cy.contains(user.productPage.productName).should('contain', 'Blue Top')
+        paymentPage.clickProceedToCheckoutBtn()
         cy.contains(user.paymentPage.addressDetails).should('be.visible')
         cy.contains(user.paymentPage.reviewYourOrder).should('be.visible')
-        cy.getBySel(LOCATORS.PAYMENT_PAGE.DESCRIPTION_FORM).type(user.paymentPage.description)
-        cy.getBySel(LOCATORS.PAYMENT_PAGE.PLACE_ORDER_BTN).click()
-        cy.getByDataQa(LOCATORS.PAYMENT_PAGE.NAME_ON_CARD).type(user.paymentPage.NameOnCard)
-        cy.getByDataQa(LOCATORS.PAYMENT_PAGE.CARD_NUMBER).type(user.paymentPage.CardNumber)
-        cy.getByDataQa(LOCATORS.PAYMENT_PAGE.CVC_NUMBER).type(user.paymentPage.cvc)
-        cy.getByDataQa(LOCATORS.PAYMENT_PAGE.EXPIRATION_MONTH).type(user.paymentPage.expirationMonth)
-        cy.getByDataQa(LOCATORS.PAYMENT_PAGE.EXPIRATION_YEAR).type(user.paymentPage.expirationYear)
-        cy.getByDataQa(LOCATORS.PAYMENT_PAGE.PAY_AND_CONFIRM_ORDER_BTN).click()
+        paymentPage.descriptionComment(user)
+        paymentPage.clickPlaceOrderBtn()
+        paymentPage.detailOfPayment(user)
+        paymentPage.clickPayAndConfirmBtn()
         cy.contains(user.paymentPage.confirmText).should('be.visible')
-        cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.DELETE_PAGE.DELETE_ACCOUNT_BTN).click()
-        cy.getByDataQa(LOCATORS.DELETE_PAGE.ACCOUNT_DELETED_TEXT).should("be.visible")
-        cy.getByDataQa(LOCATORS.DELETE_PAGE.CONTINUE_BTN).click()
 
-        
+
     })
 
 }); 

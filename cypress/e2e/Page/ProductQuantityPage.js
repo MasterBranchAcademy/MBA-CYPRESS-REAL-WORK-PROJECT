@@ -23,5 +23,6 @@ class ProductQuantity {
    verifyDetail(){
      return cy.getBySel(LOCATORS.PRODUCT_QUANTITY.QUANTITY_DETAIL)
    }
+   
 }
 export default ProductQuantity

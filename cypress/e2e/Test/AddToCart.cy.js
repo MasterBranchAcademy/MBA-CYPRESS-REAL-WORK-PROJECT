@@ -30,7 +30,7 @@ describe("Add to Cart Tests", () => {
 
     })
 
-    it.only('should add recommended items to the cart', () => {
+    it('should add recommended items to the cart', () => {
         cy.visit('/')
         cy.scrollTo('bottom')
         cy.getBySel(LOCATORS.ADD_TO_CART.RECOMENDED_ITEMS).should('be.visible')

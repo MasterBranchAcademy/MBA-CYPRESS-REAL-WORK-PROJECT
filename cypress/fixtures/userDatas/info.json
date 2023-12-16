@@ -1,7 +1,8 @@
 {
   "home": {
     "homePageText": "Full-Fledged practice website for Automation Engineers",
-    "title": "Automation Exercise"
+    "title": "Automation Exercise",
+    "loggedUserNameText":"Logged in as John"
   },
   "loginPage": {
     "newUserText": "New User Signup!",
@@ -9,7 +10,8 @@
   },
   
   "signUpPage":{
-    "enterAccountText": "Enter Account Information"
+    "enterAccountText": "Enter Account Information",
+    "accountCreatedText":"ACCOUNT CREATED!"
   },
   "userInfo": {
     "userName": "John",
