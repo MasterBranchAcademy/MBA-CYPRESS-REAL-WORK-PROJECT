@@ -60,7 +60,6 @@ describe('User Login Test', () => {
         paymentPage.clickPayAndConfirmBtn()
         cy.contains(user.paymentPage.confirmText).should('be.visible')
 
-
-    })
+ })
 
 }); 
