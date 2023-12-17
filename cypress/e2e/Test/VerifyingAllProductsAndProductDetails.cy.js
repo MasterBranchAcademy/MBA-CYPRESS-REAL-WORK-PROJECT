@@ -22,11 +22,5 @@ it('User Can See All Details After Entering  To First Product Details',()=>{
     cy.getBySel(LOCATORS.PRODUCT_PAGE.FIRST_PRODUCT_AVAILABILITY).should('be.visible')
     cy.getBySel(LOCATORS.PRODUCT_PAGE.FIRST_PRODUCT_CONDITION).should('be.visible')
     cy.getBySel(LOCATORS.PRODUCT_PAGE.FIRST_PRODUCT_BRAND).should('be.visible')
-})
-
-
-
-
-
-
+  })
 })

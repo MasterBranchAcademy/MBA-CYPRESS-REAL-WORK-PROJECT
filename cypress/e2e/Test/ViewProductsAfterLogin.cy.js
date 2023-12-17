@@ -10,12 +10,8 @@ describe("User Can See Added Products After Login",() => {
             user = userInfo
         })
     })
-        
-
-
  it("User Can See Added Product After Login" , () => {
         hmPage.visitPage()
-
         cy.getBySel(LOCATORS.HOME_PAGE.HEADER).should("be.visible");
         cy.getBySel(LOCATORS.PRODUCT_PAGE.PRODUCT_BTN).click().wait(2000);
         cy.getBySel(LOCATORS.PRODUCT_PAGE.ALL_PRODUCTS_TEXT).should('be.visible');
@@ -32,10 +28,7 @@ describe("User Can See Added Products After Login",() => {
         cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER,LOCATORS.LOGIN_PAGE.LOGGED_AS_TEXT).should('be.visible')
         cy.getBySel(LOCATORS.HOME_PAGE.CART_BUTTON).click()
         cy.getBySel(LOCATORS.CART_PAGE.CART_DESCRIPTION).should('contain','Men Tshirt')
-
-    });
-    
-   
+    });   
 });
     
 
