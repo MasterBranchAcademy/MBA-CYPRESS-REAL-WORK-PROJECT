@@ -13,7 +13,7 @@ describe('Payment Test', () => {
             user = userInfo
         })
     })
-    it.only('Kullanici siteye kaydolduktan sonra sipariş verip ödeme yapabilmelin', () => {
+    it('Kullanici siteye kaydolduktan sonra sipariş verip ödeme yapabilmelin', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)        
         cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
