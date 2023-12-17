@@ -13,10 +13,7 @@ class LoginPage {
     cy.getByDataQa(LOCATORS.LOGIN_PAGE.LOGIN_PASSWORD).type(user.userLoginPage.password);
     cy.getByDataQa(LOCATORS.LOGIN_PAGE.LOGIN_BTN).click();
   }
-  clickLoginBtn(){
-    cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
-
-  }
+  
 }
 
 export default LoginPage;
