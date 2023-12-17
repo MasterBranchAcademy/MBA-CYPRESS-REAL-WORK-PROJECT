@@ -83,6 +83,11 @@ const LOCATORS = {
     ALL_PRODUCTS_TEXT: "h2.title",
     SEARCH_ITEM: "#submit_search",
     SEARCHED_PRODUCTS_TEXT: "h2.title.text-center",
+    FIRST_PRODUCT_NAME:"div.col-sm-7 > div > h2",
+    FIRST_PRODUCT_PRICE:"span > span",
+    FIRST_PRODUCT_AVAILABILITY:"p:nth-child(6) > b",
+    FIRST_PRODUCT_CONDITION:"p:nth-child(7)",
+    FIRST_PRODUCT_BRAND:"p:nth-child(8) > b"
   },
 
   CART_PAGE: {
