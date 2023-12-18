@@ -16,6 +16,9 @@ describe('Register Test', () => {
             user = userInfo
         })
     })
+    after(() => {
+        cy.deleteAccount()
+  })
     it('Kullanici Hesap Olusturabilmeli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)

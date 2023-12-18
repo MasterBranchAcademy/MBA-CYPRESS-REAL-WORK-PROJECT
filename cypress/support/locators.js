@@ -131,7 +131,7 @@ const LOCATORS = {
     PRODUCT_1: '[data-product-id="1"]',
     PRODUCT_2: '[data-product-id="2"]',
     COUNTINUE_SHOPPING: ".btn.btn-success.close-modal.btn-block",
-    VIEW_CART: '[class="text-center"] a',
+    WIEW_CART: '[class="text-center"] a',
     PRODUCT_1_PRICE: "#product-1 .cart_price",
     PRODUCT_2_PRICE: "#product-2 .cart_price",
     PRODUCT_1_QUANTITY: "#product-1 .disabled",
