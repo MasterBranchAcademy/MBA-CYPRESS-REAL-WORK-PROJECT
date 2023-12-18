@@ -21,6 +21,15 @@ class SignupPage {
     cy.getByDataQa(LOCATORS.SIGNUP_PAGE.MOBILE_NUMBER).type(user.userInfo.mobilNumber);
     cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CREATE_ACCOUNT_BTN).click();
   }
+  clickLogin_SignupBtn(){
+    cy.getBySel(LOCATORS.HOME_PAGE.LOGIN_BTN).click()
+  }
+  accountCreatedText(){
+   return cy.getByDataQa(LOCATORS.SIGNUP_PAGE.ACCOUNT_CREATED)
+  }
+  clickContinueBtn(){
+    cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CONTINUE_BTN).click()
+  }
 }
 
 export default SignupPage;

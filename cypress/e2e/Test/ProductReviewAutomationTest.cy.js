@@ -10,7 +10,7 @@ describe("product review automation ", () => {
             user = userInfo
         })
     })
-    it.only("Add review on product", () => {
+    it("Add review on product", () => {
         testPage.visitPage()
         cy.getBySel(LOCATORS.PRODUCT_PAGE.PRODUCT_BTN).click()
         cy.getBySel(LOCATORS.PRODUCT_PAGE.ALL_PRODUCT).should('be.visible')
