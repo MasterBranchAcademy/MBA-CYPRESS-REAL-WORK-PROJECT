@@ -12,7 +12,8 @@ const LOCATORS = {
     LOGIN_BTN: 'a[href="/login"]',
     HEADER: "#header",
     PRODUCTS_BTN: '[href="/products"]',
-    CART_BUTTON: 'header#header li:nth-child(3) > a'
+    CART_BUTTON: 'header#header li:nth-child(3) > a',
+    LOGOUT_BTN:'header#header li:nth-child(4) > a'
   },
   LOGIN_PAGE: {
     SIGNUP_NAME: "signup-name",
