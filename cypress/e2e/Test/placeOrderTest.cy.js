@@ -21,7 +21,7 @@ describe("Place Order", () => {
         })
     })
 
-    after(() => {
+    afterEach(() => {
         cy.visit('/')
         cy.deleteAccount();
     });
@@ -50,5 +50,30 @@ describe("Place Order", () => {
         // Burada mesaji alabilmem için click'ten sonra pause yapmam gerekiyor
         //paymentPage.getSuccessTextMessage().should('contain','Your order has been placed successfully!' )
         cy.getByDataQa(LOCATORS.PAYMENT_PAGE.CONFIRM_MESSAGE).should('be.visible')
-    });
-}); 
+    })
+     it("Kullanici odeme yapmadan once kayit yapmali", () => {
+        homePage.visitPage()
+        cy.title().should('eq', user.home.title)
+        signupPage.clickLogin_SignupBtn()
+        cy.contains(user.loginPage.newUserText).should('be.visible')
+        loginPage.signUp(user)
+        cy.contains(user.signUpPage.enterAccountText).should('be.visible')
+        signupPage.createAccount(user)
+        signupPage.accountCreatedText().should('be.visible')
+        signupPage.clickContinueBtn()
+        cy.contains(user.home.loggedUserNameText).should('be.visible')
+        homePage.clickProduct_1()
+        homePage.clickView_CartBtn()
+        cy.contains(user.productPage.productName).should('contain', 'Blue Top')
+        paymentPage.clickProceedToCheckoutBtn()
+        cy.contains(user.paymentPage.addressDetails).should('be.visible')
+        cy.contains(user.paymentPage.reviewYourOrder).should('be.visible')
+        paymentPage.descriptionComment(user)
+        paymentPage.clickPlaceOrderBtn()
+        paymentPage.detailOfPayment(user)
+        paymentPage.clickPayAndConfirmBtn()
+        cy.contains(user.paymentPage.confirmText).should('be.visible')
+})
+})
+
+

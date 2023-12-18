@@ -5,12 +5,6 @@ const LOCATORS = {
   TestCases_PAGE: {
     TestCases: '.nav > li > a[href="/test_cases"]',
   },
-  TestCase_PAGE: {
-    TestCase: '.nav > li > a[href="/test_cases"]',
-  },
- TestCases_PAGE: {
-   TestCases:'.nav > li > a[href="/test_cases"]',
-  },
   TestCases_Text: {
     TextTitle: ".text-center>b",
   },
@@ -153,6 +147,7 @@ const LOCATORS = {
     ADD_RECOMENDED: ".recommended_items .item.active .add-to-cart",
     WIEW_RECOMMENDCART: "#cartModal u",
     CART_PRODUCT: "#product-4 h4 > a",
+    PROCEED_TO_CHECKOUT_BTN: '.col-sm-6 .btn'
   },
   CHECKOUT_PAGE: {
     DELIVERY_ADDRESS: {
@@ -183,31 +178,30 @@ const LOCATORS = {
     brandHMLink: '[href="/brand_products/H&M"]',
     VerifyBrandHM: '[href="/product_details/6"]',
   },
-  CONTACT_US_PAGE:{
-    CONTACT_US_BTN:'a[href="/contact_us"]',
-    GET_IN_TUCH_TEXT:"h2.title.text-center:nth-child(2)",
+  CONTACT_US_PAGE: {
+    CONTACT_US_BTN: 'a[href="/contact_us"]',
+    GET_IN_TUCH_TEXT: "h2.title.text-center:nth-child(2)",
     NAME: "[data-qa='name']",
     EMAIL: "[data-qa='email']",
     SUBJECT: "[data-qa='subject']",
     MESSAGE: "[data-qa='message']",
     UPLOAD_FILE: '[name="upload_file"]',
     SUBMIT_BTN: '[name="submit"]',
-    SUCCESS : '[class="status alert alert-success"]',
-    HOME :'[class="fa fa-angle-double-left"]',
-    HOMEVISIBLE :'[class="fa fa-home"]'
+    SUCCESS: '[class="status alert alert-success"]',
+    HOME: '[class="fa fa-angle-double-left"]',
+    HOMEVISIBLE: '[class="fa fa-home"]'
   },
-  PAGE_SCROLL:{
+  PAGE_SCROLL: {
     SCROLL: '.single-widget h2',
-    HOMETEXT:'#slider-carousel > div > div:nth-child(3) > div:nth-child(1) > h2',
-    ARROW_BTN:'[class="fa fa-angle-up"]'
-  },    
+    HOMETEXT: '#slider-carousel > div > div:nth-child(3) > div:nth-child(1) > h2',
+    ARROW_BTN: '[class="fa fa-angle-up"]'
+  },
   PRODUCT_QUANTITY: {
     VIEW_PRODUCT: "[href='/product_details/1']",
     ADD_TO_CART_BUTTON: "[type=button]",
     VIEW_CART_BUTTON: "[href='/view_cart']>u",
     QUANTITY_DETAIL: "#product-1 button",
-  },    
+  }
 
-};
-
+}
 export default LOCATORS;

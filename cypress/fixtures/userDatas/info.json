@@ -2,6 +2,7 @@
   "home": {
     "homePageText": "Full-Fledged practice website for Automation Engineers",
     "title": "Automation Exercise",
+    "loggedUserNameText":"Logged in as John",
     "emailForSubscription": "ornekbirhesap@gmail.com"
   },
   "loginPage": {
@@ -9,7 +10,8 @@
     "errorText": "Your email or password is incorrect!"
   },
   "signUpPage":{
-    "enterAccountText": "Enter Account Information"
+    "enterAccountText": "Enter Account Information",
+    "accountCreatedText":"ACCOUNT CREATED!"
   },
   "userInfo": {
     "userName": "John",

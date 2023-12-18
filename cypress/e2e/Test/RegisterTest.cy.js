@@ -4,10 +4,11 @@ import LoginPage from "../Page/LoginPage";
 import SignupPage from "../Page/SignupPage";
 
 describe('Register Test', () => {
-
+    
     const homePage = new HomePage
     const loginPage = new LoginPage
     const signupPage = new SignupPage
+
     let user;
 
     before(() => {
@@ -15,11 +16,9 @@ describe('Register Test', () => {
             user = userInfo
         })
     })
-
     after(() => {
-       cy.deleteAccount();
-    });
-
+        cy.deleteAccount()
+  })
     it('Kullanici Hesap Olusturabilmeli', () => {
         homePage.visitPage()
         cy.title().should('eq', user.home.title)
@@ -31,6 +30,7 @@ describe('Register Test', () => {
         cy.getByDataQa(LOCATORS.SIGNUP_PAGE.ACCOUNT_CREATED).should('be.visible')
         cy.getByDataQa(LOCATORS.SIGNUP_PAGE.CONTINUE_BTN).click()
         cy.getByCompoundSel(LOCATORS.HOME_PAGE.HEADER, LOCATORS.LOGIN_PAGE.LOGGED_AS_TEXT).should('be.visible')
-    });
+    
+})
 });
 
