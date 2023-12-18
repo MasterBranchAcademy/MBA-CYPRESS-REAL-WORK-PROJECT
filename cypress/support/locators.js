@@ -13,6 +13,7 @@ const LOCATORS = {
     HEADER: "#header",
     PRODUCTS_BTN: '[href="/products"]',
     CART_BUTTON: 'header#header li:nth-child(3) > a',
+    LOGOUT_BTN:'header#header li:nth-child(4) > a',
     SUBSCRIPTION_TEXT: ".single-widget",
     INPUT_BOX_FOR_EMAIL: "#susbscribe_email",
     ARROW_BTN: "#subscribe",
