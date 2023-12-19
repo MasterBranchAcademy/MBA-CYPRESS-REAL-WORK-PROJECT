@@ -1,14 +1,12 @@
-import HomePage from "../Page/HomePage"
 import LOCATORS from "../../support/locators";
 describe('Brand Page Test', () => {
-  const testPage = new HomePage()
   let user;
   before(() => {
     cy.fixture('userDatas/info').then((userInfo) => {
       user = userInfo
     })
   })
-  it.only('should navigate to brand pages and verify product visibility', () => {
+  it('should navigate to brand pages and verify product visibility', () => {
     cy.visit('/')
     cy.getBySel(LOCATORS.Brands.productsButton).should("be.visible").click()
     cy.getBySel(LOCATORS.Brands.brandsSidebar).should('be.visible');
