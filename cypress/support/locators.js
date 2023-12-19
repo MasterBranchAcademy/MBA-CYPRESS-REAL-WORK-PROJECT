@@ -61,6 +61,11 @@ const LOCATORS = {
     ACCOUNT_CREATED: "account-created",
     CONTINUE_BTN: "continue-button",
   },
+  New_User_Signup: {
+    NAME:"signup-name",
+    EMAIL_ADDRESS:"signup-email",
+    SINGUP_BOTUN:"signup-button",
+  },
   DELETE_PAGE: {
     DELETE_ACCOUNT_BTN: "li:nth-child(5) > a",
     ACCOUNT_DELETED_TEXT: "account-deleted",

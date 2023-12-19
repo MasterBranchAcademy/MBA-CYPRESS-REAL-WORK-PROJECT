@@ -31,5 +31,4 @@ describe('User Login Test', () => {
         cy.getBySel(LOCATORS.LOGIN_PAGE.LOGIN_ERROR_MESSAGE).should('have.text', user.loginPage.errorText)
 
     })
-
 }); 
