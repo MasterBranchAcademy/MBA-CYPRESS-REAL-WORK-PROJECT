@@ -14,16 +14,16 @@ module.exports = defineConfig({
   videoCompression: true,
   screenshot: true,
   e2e: {
-        baseUrl: 'https://automationexercise.com/',
-    },
-    setupNodeEvents(on) {
-      on('before:browser:launch', (browser = {}, launchOptions) => {
-        if (browser.name === 'chrome') {
-          launchOptions.args.push('--disable-dev-shm-usage');
-          return launchOptions;
-        }
-      },
-     );
-    },
+    baseUrl: 'https://automationexercise.com/',
   },
+  setupNodeEvents(on) {
+    on('before:browser:launch', (browser = {}, launchOptions) => {
+      if (browser.name === 'chrome') {
+        launchOptions.args.push('--disable-dev-shm-usage');
+        return launchOptions;
+      }
+    },
+    );
+  },
+},
 );
