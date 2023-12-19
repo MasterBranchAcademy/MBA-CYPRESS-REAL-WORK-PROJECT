@@ -13,12 +13,15 @@ const LOCATORS = {
     HEADER: "#header",
     PRODUCTS_BTN: '[href="/products"]',
     CART_BUTTON: 'header#header li:nth-child(3) > a',
-    LOGOUT_BTN:'header#header li:nth-child(4) > a',
+    LOGOUT_BTN: 'header#header li:nth-child(4) > a',
     SUBSCRIPTION_TEXT: ".single-widget",
     INPUT_BOX_FOR_EMAIL: "#susbscribe_email",
     ARROW_BTN: "#subscribe",
     SUCCESS_SUBS_MSG_: ".alert-success.alert",
     CART_BTN: "a[href='/view_cart']",
+    CATEGORY: " .left-sidebar>h2",
+    WOMEN: ' [data-parent="#accordian"]',
+    DRESS: '[href="/category_products/1"]'
   },
   LOGIN_PAGE: {
     SIGNUP_NAME: "signup-name",
@@ -78,11 +81,11 @@ const LOCATORS = {
     ALL_PRODUCTS_TEXT: "h2.title",
     SEARCH_ITEM: "#submit_search",
     SEARCHED_PRODUCTS_TEXT: "h2.title.text-center",
-    FIRST_PRODUCT_NAME:"div.col-sm-7 > div > h2",
-    FIRST_PRODUCT_PRICE:"span > span",
-    FIRST_PRODUCT_AVAILABILITY:"p:nth-child(6) > b",
-    FIRST_PRODUCT_CONDITION:"p:nth-child(7)",
-    FIRST_PRODUCT_BRAND:"p:nth-child(8) > b"
+    FIRST_PRODUCT_NAME: "div.col-sm-7 > div > h2",
+    FIRST_PRODUCT_PRICE: "span > span",
+    FIRST_PRODUCT_AVAILABILITY: "p:nth-child(6) > b",
+    FIRST_PRODUCT_CONDITION: "p:nth-child(7)",
+    FIRST_PRODUCT_BRAND: "p:nth-child(8) > b"
   },
 
   CART_PAGE: {
@@ -202,6 +205,10 @@ const LOCATORS = {
     ADD_TO_CART_BUTTON: "[type=button]",
     VIEW_CART_BUTTON: "[href='/view_cart']>u",
     QUANTITY_DETAIL: "#product-1 button",
+  },
+  CATEGORY: {
+    PRODUCTS: "div .breadcrumbs .active",
+    JEANS: '[href="/category_products/6"]',
   }
 
 }

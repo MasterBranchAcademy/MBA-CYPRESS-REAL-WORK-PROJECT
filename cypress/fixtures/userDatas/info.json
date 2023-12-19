@@ -2,16 +2,17 @@
   "home": {
     "homePageText": "Full-Fledged practice website for Automation Engineers",
     "title": "Automation Exercise",
-    "loggedUserNameText":"Logged in as John",
-    "emailForSubscription": "ornekbirhesap@gmail.com"
+    "loggedUserNameText": "Logged in as John",
+    "emailForSubscription": "ornekbirhesap@gmail.com",
+    "category": "Category"
   },
   "loginPage": {
     "newUserText": "New User Signup!",
     "errorText": "Your email or password is incorrect!"
   },
-  "signUpPage":{
+  "signUpPage": {
     "enterAccountText": "Enter Account Information",
-    "accountCreatedText":"ACCOUNT CREATED!"
+    "accountCreatedText": "ACCOUNT CREATED!"
   },
   "userInfo": {
     "userName": "John",
@@ -60,11 +61,14 @@
     "expirationYear": "2025",
     "product": "Sleeves Printed Top - White"
   },
-  "contactPageInfo" :{
-    "name":"John",
-    "email":"john_wick@mail.com",
-    "subject":"Contact Form",
-    "message":"The relevant file is attached"
-    
+  "contactPageInfo": {
+    "name": "John",
+    "email": "john_wick@mail.com",
+    "subject": "Contact Form",
+    "message": "The relevant file is attached"
+  },
+  "categoryPage": {
+    "text_Dress": "Women > Dress",
+    "text_Jeans": "Men > Jeans"
   }
 }
