@@ -28,7 +28,7 @@ describe("Searching Test", () => {
     })
     it("Kullanici mevcut butun urunleri goruntuleyebilmeli", () => {
 
-        cy.getBySel(LOCATORS.HOME_PAGE.PRODUCTS_BTN).click();
+        homePage.clickProducts();//metot ekledim
         cy.getBySel(LOCATORS.PRODUCT_PAGE.ALL_PRODUCTS_TEXT).should('be.visible')
         cy.getBySel(LOCATORS.PRODUCT_PAGE.SEARCH_BOX).type(user.productPage.productName);
         cy.getBySel(LOCATORS.PRODUCT_PAGE.SEARCH_ITEM).click();

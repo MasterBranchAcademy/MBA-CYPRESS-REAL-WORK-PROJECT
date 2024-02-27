@@ -12,11 +12,14 @@ before(() => {
 })
 it('User Can See All Details After Entering  To First Product Details',()=>{
     hmePage.visitPage()
-    cy.getBySel(LOCATORS.HOME_PAGE.HEADER).should("be.visible");
-    cy.getBySel(LOCATORS.HOME_PAGE.PRODUCTS_BTN).click()
+    hmePage.clickProducts();
+    hmePage.clickProduct_1();
+    //cy.getBySel(LOCATORS.HOME_PAGE.HEADER).should("be.visible");
+    //cy.getBySel(LOCATORS.HOME_PAGE.PRODUCTS_BTN).click()
     cy.getBySel(LOCATORS.PRODUCT_PAGE.ALL_PRODUCTS_TEXT).should('be.visible')
     cy.getBySel(LOCATORS.PRODUCT_PAGE.ALL_PRODUCT).should('be.visible')
-    cy.getBySel(LOCATORS.PRODUCT_PAGE.VIEW_PRODUCT_BTN).click()
+    hmePage.clickView_CartBtn();
+    cy.getBySel(LOCATORS.PRODUCT_PAGE.VIEW_PRODUCT_BTN).click()// metot var lokeyter tekrar
     cy.getBySel(LOCATORS.PRODUCT_PAGE.FIRST_PRODUCT_NAME).should('be.visible')
     cy.getBySel(LOCATORS.PRODUCT_PAGE.FIRST_PRODUCT_PRICE).should('be.visible')
     cy.getBySel(LOCATORS.PRODUCT_PAGE.FIRST_PRODUCT_AVAILABILITY).should('be.visible')

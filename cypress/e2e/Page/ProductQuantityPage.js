@@ -7,9 +7,7 @@ class ProductQuantity {
    }
 
    urununSayisiniArttirma() {
-
-      return cy.get('#quantity').clear().type(4)
-
+     return cy.get('#quantity').clear().type(4)
    }
 
    clickAddToCartButton() {
@@ -19,7 +17,7 @@ class ProductQuantity {
    clickViewCartButton() {
       cy.getBySel(LOCATORS.PRODUCT_QUANTITY.VIEW_CART_BUTTON).click()
    }
-
+   
    verifyDetail(){
      return cy.getBySel(LOCATORS.PRODUCT_QUANTITY.QUANTITY_DETAIL)
    }
