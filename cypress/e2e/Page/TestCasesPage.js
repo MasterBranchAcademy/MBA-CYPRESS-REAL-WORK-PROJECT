@@ -2,12 +2,10 @@ import LOCATORS from "../../support/locators"
 class TestCases {
 
     clickTestCases() {
-        cy.getBySel(LOCATORS.TestCases_PAGE.TestCases).click()
-
+        cy.getBySel(LOCATORS.HOME_PAGE.TEST_CASES_BTN).click()
     }
-
     getTextTitle() {
-        return cy.getBySel(LOCATORS.TestCases_Text.TextTitle)
+        return cy.getBySel(LOCATORS.TESTCASES_PAGE.TESTCASES_TEXT)
     }
 }
 export default TestCases

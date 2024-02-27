@@ -13,17 +13,17 @@ describe('Scroll Down Functionality Test', () => {
     it('Kullanici subscription butonunu gorebilmeli', () => {
         homePage.visitPage() 
         cy.title().should('eq', user.home.title) 
-        cy.getBySel(LOCATORS.PAGE_SCROLL.SCROLL).scrollIntoView()
-        cy.getBySel(LOCATORS.PAGE_SCROLL.SCROLL).should('be.visible')
-        cy.getBySel(LOCATORS.PAGE_SCROLL.HOMETEXT).scrollIntoView().should('be.visible')
+        homePage.scrollIntoViewMethod().should('be.visible') 
+       // cy.contains(user.home.homePageText).scrollIntoView().should("be.visible") bu test case göre fazla. ikisi ayni test case icinmi
     });
     it('Kullanici arrow butonu kullanarak sayfayi asayi yukari yapabilmeli', () => {
         homePage.visitPage() 
         cy.title().should('eq', user.home.title) 
-        cy.getBySel(LOCATORS.PAGE_SCROLL.SCROLL).trigger('mousedown').should('be.visible')
+        homePage.subcribtionText().should('be.visible')
         cy.wait(2000)
-        cy.getBySel(LOCATORS.PAGE_SCROLL.ARROW_BTN).click().trigger('mouseup','topRight')
-        cy.getBySel(LOCATORS.PAGE_SCROLL.HOMETEXT).should('be.visible')
+        homePage.arrowButton();
+        cy.contains(user.home.homePageText).should('be.visible')
     });
+
     });
     
