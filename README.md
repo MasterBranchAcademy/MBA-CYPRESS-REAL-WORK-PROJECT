@@ -42,4 +42,4 @@
     |- support ##  özel komutları tutar
     |- videos ## başarısız testler için videolar tutar
     |- .gitignore ## işlenecek dosyaları yoksay
-    |- cypress.config.js ## cypress yapılandırma dosyası
+    |- cypress.config.js ## cypress yapılandırma dosyasıdir
